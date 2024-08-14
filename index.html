@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tip calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <main id="main">
+      <img src="./images/logo.svg" alt="logo image" class="logo" />
+      <section class="container">
+        <div class="bill">
+          <form action="" class="form">
+            <label for="bill" class="bill-label">Bill</label>
+            <input type="text" class="bill-input" placeholder="0" />
+            <img
+              src="./images/icon-dollar.svg"
+              width="12px"
+              alt="dollar icon"
+              class="dollar-icon"
+            />
+          </form>
+          <div class="select">
+            <h2 class="select-title">select tip %</h2>
+            <div class="btns">
+              <button class="btn">5%</button>
+              <button class="btn">10%</button>
+              <button class="btn">15%</button>
+              <button class="btn">25%</button>
+              <button class="btn">50%</button>
+              <!-- <button class="btn custom">Custom</button> -->
+               <input type="text" value="" placeholder="Custom" class="custom" />
+            </div>
+          </div>
+          <form action="" class="form">
+            <label for="bill" class="bill-label">Number of People</label>
+            <input type="text" class="bill-input" aria-placeholder="0" placeholder="0" />
+            <img
+              src="./images/icon-person.svg"
+              width="12px"
+              alt="dollar icon"
+              class="dollar-icon"
+            />
+          </form>
+        </div>
+        <div class="amount">
+          <div class="tip-area">
+            <div class="tip-amount">
+              <p>
+                Tip Amount <br>
+                <span class="person">/ person</span>
+              </p>
+              <p class="TipAmount">$0.00</p>
+            </div>
+            <div class="total-amount">
+              <p>
+                Total <br>
+                <span class="person">/ person</span>
+              </p>
+              <p class="total">$0.00</p>
+            </div>
+          </div>
+          <button type="reset" class="reset" disabled>reset</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
