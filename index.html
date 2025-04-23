@@ -41,8 +41,8 @@
             </div>
           </div>
           <form action="" class="form">
-            <label for="bill" class="bill-label">Number of People</label>
-            <input type="text" class="bill-input" aria-placeholder="0" placeholder="0" />
+            <label for="bill" class="bill-label">Number of People <span class="alert">Can't be zero</span></label>
+            <input type="text" class="person-input" aria-placeholder="0" placeholder="0" />
             <img
               src="./images/icon-person.svg"
               width="12px"
@@ -58,14 +58,14 @@
                 Tip Amount <br>
                 <span class="person">/ person</span>
               </p>
-              <p class="TipAmount">$0.00</p>
+              <p class="TipAmount" id="tipAmountPerPerson">$0.00</p>
             </div>
             <div class="total-amount">
               <p>
                 Total <br>
                 <span class="person">/ person</span>
               </p>
-              <p class="total">$0.00</p>
+              <p class="total" id="totalTip">$0.00</p>
             </div>
           </div>
           <button type="reset" class="reset" disabled>reset</button>
